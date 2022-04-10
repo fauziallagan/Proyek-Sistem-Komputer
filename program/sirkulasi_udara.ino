@@ -2,9 +2,12 @@
  #include <ESP8266WiFi.h>           //EPS8266WIFI module library
  #include <BlynkSimpleEsp8266.h>    // Blynk library
 
-char auth[] = "iOmI-1Nom7_plCZikYn5Q5mvmTx06xMx"; // Auth blynk Account 
-char ssid[] = "allagan";  // SSID WIFI
-char pass[] = "allagankingdom"; // Password WIFI
+// IMPORTANT! PLEASE EDIT THIS VARIABLE BELOW
+char auth[] = "YOUR AUTH BLYNK ACCOUNT"; // Auth blynk Account 
+char ssid[] = "YOUR SSID WIFI";  // SSID WIFI
+char pass[] = "YOUR PASSWORD WIFI"; // Password WIFI
+
+
 DHT dht(D5, DHT22);                           // DHT instance named dht, D5 and sensor type
 
 // Global Declaration
