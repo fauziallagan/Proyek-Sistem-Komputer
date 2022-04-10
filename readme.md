@@ -1,7 +1,7 @@
 
 # Proyek Sistem Komputer Universitas Gunadarma
 
-Sistem Parameter Lingkungan Tanaman Cabai Pada Rumah Kaca Dan Notifikasi Kerusakan Dini Berbasis IoT
+"Sistem Parameter Lingkungan Tanaman Cabai Pada Rumah Kaca Dan Notifikasi Kerusakan Dini Berbasis IoT"
 
 
 ## Documentation
