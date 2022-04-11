@@ -6,7 +6,7 @@
 
 ## Documentation
 
-#### Get all items
+#### NodeMCU ESP-8266
 
 ```http
   -
@@ -16,7 +16,7 @@
 | :-------- | :------- | :------------------------- |
 | `-` | `-` | - |
 
-#### 
+#### Sensor LDR Pinout
 
 ```http
   -
@@ -27,3 +27,23 @@
 | `-`      | `-` | - |
 
 
+#### Sensor DHT Pinout
+
+```http
+  -
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `-` | `-` | - |
+
+
+#### Get all items
+
+```http
+  -
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `-` | `-` | - |
