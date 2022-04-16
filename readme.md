@@ -4,7 +4,7 @@
 "Sistem Parameter Lingkungan Tanaman Cabai Pada Rumah Kaca Dan Notifikasi Kerusakan Dini Berbasis IoT"
 
 # Schematic
-![Logo](https://github.com/fauziallagan/Proyek-Sistem-Komputer/blob/master/finish.PNG)
+![Logo](https://github.com/fauziallagan/Proyek-Sistem-Komputer/blob/master/new.PNG)
 
 ## Documentation
 
