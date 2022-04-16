@@ -14,9 +14,12 @@
   -
 ```
 
-| Parameter | Type     | Description                |
+| PIN | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `-` | `-` | - |
+| `A0` | `Analog` | LDR |
+| `D5` | `Digital` | DHT22 |
+| `D6` | `Digital` | IN1 |
+| `D7` | `Digital` | IN2 |
 #### Sensor LDR Pinout
 
 ```C++
