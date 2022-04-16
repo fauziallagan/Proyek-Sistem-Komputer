@@ -8,11 +8,7 @@
 
 ## Documentation
 
-#### NodeMCU ESP-8266
-
-```http
-  -
-```
+#### NodeMCU ESP-8266 Pinout
 
 | PIN | Type     | Description                |
 | :-------- | :------- | :------------------------- |
