@@ -4,19 +4,18 @@
 "Sistem Parameter Lingkungan Tanaman Cabai Pada Rumah Kaca Dan Notifikasi Kerusakan Dini Berbasis IoT"
 
 # Schematic
-![Logo](https://github.com/fauziallagan/Proyek-Sistem-Komputer/blob/master/finish.PNG)
+![Logo](https://github.com/fauziallagan/Proyek-Sistem-Komputer/blob/master/new.PNG)
 
 ## Documentation
 
-#### NodeMCU ESP-8266
+#### NodeMCU ESP-8266 Pinout
 
-```http
-  -
-```
-
-| Parameter | Type     | Description                |
+| PIN | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `-` | `-` | - |
+| `A0` | `Analog` | LDR |
+| `D5` | `Digital` | DHT22 |
+| `D6` | `Digital` | IN1 |
+| `D7` | `Digital` | IN2 |
 #### Sensor LDR Pinout
 
 ```C++
