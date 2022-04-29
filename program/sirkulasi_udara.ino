@@ -6,7 +6,7 @@
 // ** Connection to Blynk ** //
 // IMPORTANT! PLEASE EDIT THIS VARIABLE BELOW
 char auth[] = "YOUR AUTHENTICATION BLYNK"; // Auth blynk Account
-// char authLocal[] = "YOUR AUTHENTICATION BLYNK FOR LOCAL SERVER"; // auth local server  * Do not Use! *
+// char authLocal[] = "YOUR AUTHENTICATION BLYNK FOR LOCAL SERVER"; // auth local server  * Do not Use! this Experimental *
 char ssid[] = "YOUR SSID WIFI";        // SSID WIFI
 char pass[] = "YOUR PASSWORD WIFI"; // Password WIFI
 
