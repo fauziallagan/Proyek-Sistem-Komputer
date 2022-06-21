@@ -1,47 +1,31 @@
-#include "DHT.h"
-#include <ESP8266WiFi.h>
-#include <BlynkSimpleEsp8266.h>
+// ** Import Library ** //
+#include "DHT.h"                // DHT Sensor
+#include <ESP8266WiFi.h>        //EPS8266WIFI module library
+#include <BlynkSimpleEsp8266.h> // Blynk library
 
-<<<<<<< HEAD
-// Template ID, Device Name and Auth Token are provided by the Blynk.Cloud
-// See the Device Info tab, or Template settings
-#define BLYNK_TEMPLATE_ID "" // use tample id
-#define BLYNK_DEVICE_NAME "" // use device name
-#define BLYNK_AUTH_TOKEN ""  // use auth token
-// Comment this out to disable prints and save space
-#define BLYNK_PRINT Serial
-=======
 // ** Connection to Blynk ** //
 // IMPORTANT! PLEASE EDIT THIS VARIABLE BELOW
-char auth[] = "YOUR AUTHENTICATION BLYNK"; // Auth blynk Account
-// char authLocal[] = "YOUR AUTHENTICATION BLYNK FOR LOCAL SERVER"; // auth local server  * Do not Use! this Experimental *
-char ssid[] = "YOUR SSID WIFI";        // SSID WIFI
-char pass[] = "YOUR PASSWORD WIFI"; // Password WIFI
->>>>>>> 2f5d12dface81314393c3ad13b0f0629abfd136e
+char auth[] = "iOmI-1Nom7_plCZikYn5Q5mvmTx06xMx"; // Auth blynk Account
+// char authLocal[] = "M4XIeWMTxn1YffCaG1t-Lb33YZ7L-abg"; // auth local server  * Do not Use! *
+char ssid[] = "allagan";        // SSID WIFI
+char pass[] = "allagankingdom"; // Password WIFI
 
-char auth[] = BLYNK_AUTH_TOKEN;
-
-// Your WiFi credentials.
-// Set password to "" for open networks.
-char ssid[] = ""; // change ssid
-char pass[] = ""; // change password
-
-// sensors
 // ** Declaration Variabel Sensor ** //
 DHT dht(D5, DHT22); // DHT instance named dht, D5 and sensor type
 
 // Global Declaratio
 int ldrSensors = A0; // LDR instance named ldrSensors, A0
 int ldr;             // count LDR
+
 // **  if relay ready, uncomment variabel below  ** //
 #define relay1 D6 // relay module IN 1
 #define relay2 D7 // relay module IN 2
 
 void setup()
 {
-  // put your setup code here, to run once:
-  Serial.begin(115200); // serial boundrate 115200
-  Blynk.begin(auth, ssid, pass);
+  Serial.begin(115200);          // serial boundrate 115200
+  Blynk.begin(auth, ssid, pass); // Connecting to blynk
+  // Blynk.begin(authLocal, ssid, pass, IPAddress(192, 168, 1, 110), 8080); //  blynk local server fix problem  * Do not Use! if not blynk local server *
   dht.begin(); // Starting  DHT-22
   // pinMode(ledTesting, OUTPUT);           // declare LED
   pinMode(relay1, OUTPUT); // set relay1 for output Kipas
@@ -50,10 +34,16 @@ void setup()
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
   Blynk.run();
-  sensorStarted(); //  1 detik
+  // dhtSensors(); // call function DHT
+  //  ldrSensor();  // call function LDR
+  sensorStarted(); //  100 milisecond
   delay(1000);
+  //
+  // ** Call Function Testing Component ** //
+  // relaySensorTesting(); // use if relay not working!
+  // dhtTesting();          // use if dht working!
+  // ldrSensor(); // use if ldr not working!
 }
 
 void dhtSensors()
@@ -72,9 +62,9 @@ void dhtSensors()
   // Condition DHT
   // statement :
   /*
-    jika temp kurang dari 21 derajat celcius maka lampu on dan kipas off
-    jika temp lebih dari 21 atau dibawah 28 maka lampu off kipas on
-  */
+jika temp kurang dari 21 derajat celcius maka lampu on dan kipas off
+jika temp lebih dari 21 atau dibawah 28 maka lampu off kipas on
+   */
   if (temp <= 21)
   {
     // Code here!
