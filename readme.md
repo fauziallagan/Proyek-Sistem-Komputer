@@ -55,11 +55,9 @@
 | `DHT` |dht(pin,type)|
 
 
-#### Get all items
+#### NodeMcu Expansion board
 
-```http
-  -
-```
+![Logo](https://github.com/fauziallagan/Proyek-Sistem-Komputer/blob/master/ll1.PNG)
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
